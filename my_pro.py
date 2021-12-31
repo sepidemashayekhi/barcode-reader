@@ -12,7 +12,7 @@ while True:
         cv2.polylines(frame,[pts],True,(0,0,255),5)
         pts2=barcode.rect
         cv2.putText(frame,bra_data,(pts2[0],pts2[1]),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
-    # frame=cv2.flip(frame,1)
+    # rame=cv2.flip(frame,1)
     cv2.imshow('frame',frame)
     cv2.waitKey(1)
 
